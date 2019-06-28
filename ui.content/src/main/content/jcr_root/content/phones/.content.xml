@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured">
+    <basic
+        jcr:mixinTypes="[]"
+        jcr:primaryType="nt:unstructured"
+        camera="10 Megapixels"
+        desc="phone"
+        images="[/content/dam/crphone/phones/41jEEMJi1AL._SX466_.jpg,/content/dam/crphone/phones/51w0b6AiDTL._SX466_.jpg,/content/dam/crphone/phones/51K9bDYaqCL.jpg]"
+        name="Basic"
+        networks="[4G LTE,Any]"
+        processor="Dual Core"
+        ram="2GB"
+        sd="64GB"/>
+    <advanced
+        jcr:primaryType="nt:unstructured"
+        camera="20MB"
+        desc="phone"
+        images="[/content/dam/crphone/phones/41QSXN47YML._SY445_.jpg,/content/dam/crphone/phones/31BQE3FP5NL._SY445_.jpg,/content/dam/crphone/phones/31VFC5S7C5L._SY445_.jpg,/content/dam/crphone/phones/41TGXKRMYVL._SY445_.jpg,/content/dam/crphone/phones/217R45C1AVL._SY445_.jpg,/content/dam/crphone/phones/4165X3772JL._SY445_.jpg]"
+        name="Advanced"
+        networks="[4G LTE,5G]"
+        processor="Quad Core"
+        ram="4GB"
+        sd="256GB"/>
+</jcr:root>
