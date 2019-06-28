@@ -1,0 +1,24 @@
+<sly data-sly-use.galleryModel="com.crphone.crPhoneTest.core.models.Gallery"/>
+
+<div data-sly-test="${wcmmode.edit}" class="author-edit-bar">
+    ${component.title} - ${'Click here to edit' @ i18n}
+</div>
+
+<div class="gallery">
+    <sly data-sly-list="${galleryModel.phones}">
+        <div data-sly-test="${item.name == properties.dropdown}">
+            <h3>${item.name}</h3>
+            <sly data-sly-list.images="${item.images}">
+                <img src="${images}">
+            </sly>
+        </div>
+        <div data-sly-test="${!properties.dropdown}">
+            <div data-sly-test="${itemList.index == 0}">
+                <h3>${item.name}</h3>
+                <sly data-sly-list.images="${item.images}">
+                    <img src="${images}">
+                </sly>
+            </div>
+        </div>
+    </sly>
+</div>

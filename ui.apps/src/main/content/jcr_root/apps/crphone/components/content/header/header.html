@@ -1,0 +1,9 @@
+<div data-sly-test="${wcmmode.edit}" class="author-edit-bar">
+    ${component.title} - ${'Click here to edit' @ i18n}
+</div>
+
+<div class="header">
+    <h1>${properties.title}</h1>
+    <h2>${properties.subtitle}</h2>
+    <p>${properties.body || '&nbsp;' @ context='html'}</p>
+</div>

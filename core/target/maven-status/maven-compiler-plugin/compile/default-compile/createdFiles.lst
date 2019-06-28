@@ -1,0 +1,9 @@
+com/crphone/crPhoneTest/core/servlets/ProductServlet.class
+com/crphone/crPhoneTest/core/listeners/SimpleResourceListener.class
+com/crphone/crPhoneTest/core/schedulers/SimpleScheduledTask.class
+com/crphone/crPhoneTest/core/schedulers/SimpleScheduledTask$Config.class
+com/crphone/crPhoneTest/core/services/PhonesDataSource.class
+com/crphone/crPhoneTest/core/filters/LoggingFilter.class
+com/crphone/crPhoneTest/core/models/Phone.class
+com/crphone/crPhoneTest/core/models/Gallery.class
+com/crphone/crPhoneTest/core/package-info.class

@@ -1,0 +1,66 @@
+<sly data-sly-use.phonesModel="com.crphone.crPhoneTest.core.servlets.ProductServlet"/>
+
+<div data-sly-test="${wcmmode.edit}" class="author-edit-bar">
+    ${component.title} - ${'Click here to edit' @ i18n}
+</div>
+
+<div class="products">
+    <table>
+        <tr class="row-grey">
+            <th></th>
+            <sly data-sly-list="${phonesModel.phones}">
+                <td>Phone ${itemList.count}</td>
+            </sly>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <sly data-sly-list.phones="${phonesModel.phones}">
+                <td>${phones.name}</td>
+            </sly>
+        </tr>
+        <tr data-sly-test="${properties.processor != 'false'}">
+            <th>Processor</th>
+            <sly data-sly-list.phones="${phonesModel.phones}">
+                <td>${phones.processor}</td>
+            </sly>
+        </tr>
+        <tr data-sly-test="${properties.ram != 'false'}">
+            <th>RAM</th>
+            <sly data-sly-list.phones="${phonesModel.phones}">
+                <td>${phones.ram}</td>
+            </sly>
+        </tr>
+        <tr data-sly-test="${properties.sd != 'false'}">
+            <th>SD</th>
+            <sly data-sly-list.phones="${phonesModel.phones}">
+                <td>${phones.sd}</td>
+            </sly>
+        </tr>
+        <tr data-sly-test="${properties.camera != 'false'}">
+            <th>Camera</th>
+            <sly data-sly-list.phones="${phonesModel.phones}">
+                <td>${phones.camera}</td>
+            </sly>
+        </tr>
+        <tr data-sly-test="${properties.networks != 'false'}">
+            <th>Networks</th>
+            <sly data-sly-list.phones="${phonesModel.phones}">
+                <td>
+                    <sly data-sly-list.networks="${phones.networks}">
+                        <p>${networks}</p>
+                    </sly>
+                </td>
+            </sly>
+        </tr>
+        <tr data-sly-test="${properties.images != 'false'}">
+            <th>Images</th>
+            <sly data-sly-list.phones="${phonesModel.phones}">
+                <td>
+                    <sly data-sly-list.images="${phones.images}">
+                        <img src="${images}">
+                    </sly>
+                </td>
+            </sly>
+        </tr>
+    </table>
+</div>

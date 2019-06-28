@@ -1,0 +1,42 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1561755395817
+Build-Jdk: 1.8.0_191
+Built-By: mulate1
+Bundle-Description: Core bundle for crphoneArtifact
+Bundle-ManifestVersion: 2
+Bundle-Name: crphoneArtifact - Core
+Bundle-SymbolicName: com.crphone.crPhoneTest.core
+Bundle-Version: 0.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.crphone.crPhoneTest.core.filters;version="0.0.1";use
+ s:="javax.servlet",com.crphone.crPhoneTest.core.servlets;version="0.0.1
+ ";uses:="com.crphone.crPhoneTest.core.models,javax.annotation,org.apach
+ e.sling.api,org.apache.sling.models.annotations",com.crphone.crPhoneTes
+ t.core.models;version="0.0.1";uses:="javax.annotation,org.apache.sling.
+ api.resource,org.apache.sling.models.annotations",com.crphone.crPhoneTe
+ st.core;version="1.0",com.crphone.crPhoneTest.core.listeners;version="0
+ .0.1";uses:="org.osgi.service.event",com.crphone.crPhoneTest.core.servi
+ ces;version="0.0.1";uses:="com.adobe.granite.ui.components.ds,org.apach
+ e.sling.api.resource",com.crphone.crPhoneTest.core.schedulers;version="
+ 0.0.1"
+Import-Package: javax.inject;version="0.0.0",com.adobe.granite.ui.compon
+ ents.ds;version="[1.1,2)",com.crphone.crPhoneTest.core.models;version="
+ [0.0,1)",javax.annotation,javax.servlet,org.apache.sling.api;version="[
+ 2.3,3)",org.apache.sling.api.request;version="[2.4,3)",org.apache.sling
+ .api.resource;version="[2.9,3)",org.apache.sling.api.wrappers;version="
+ [2.5,3)",org.apache.sling.models.annotations;version="[1.2,2)",org.apac
+ he.sling.models.annotations.injectorspecific;version="[1.1,2)",org.osgi
+ .service.event;version="[1.3,2)",org.slf4j;version="[1.5,2)"
+Provide-Capability: osgi.service;objectClass:List<String>="java.lang.Run
+ nable",osgi.service;objectClass:List<String>="javax.servlet.Filter",osg
+ i.service;objectClass:List<String>="org.osgi.service.event.EventHandler
+ "
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compone
+ nt)(version>=1.3.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.ee=Ja
+ vaSE)(version=1.8))"
+Service-Component: OSGI-INF/com.crphone.crPhoneTest.core.filters.Logging
+ Filter.xml,OSGI-INF/com.crphone.crPhoneTest.core.listeners.SimpleResour
+ ceListener.xml,OSGI-INF/com.crphone.crPhoneTest.core.schedulers.SimpleS
+ cheduledTask.xml
+Sling-Model-Packages: com.crphone.crPhoneTest.core
+Tool: Bnd-3.3.0.201609221906

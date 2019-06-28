@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Products"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                <items jcr:primaryType="nt:unstructured">
+                    <dialog
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Information to display"
+                        sling:resourceType="granite/ui/components/foundation/section">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <processor
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        checked="{Boolean}true"
+                                        name="./processor"
+                                        text="Processor"
+                                        value="true"
+                                        uncheckedValue="false"/>
+                                    <ram
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        checked="{Boolean}true"
+                                        name="./ram"
+                                        text="RAM"
+                                        value="true"
+                                        uncheckedValue="false"/>
+                                    <SD
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        checked="{Boolean}true"
+                                        name="./sd"
+                                        text="SD"
+                                        value="true"
+                                        uncheckedValue="false"/>
+                                    <camera
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        checked="{Boolean}true"
+                                        name="./camera"
+                                        text="Camera"
+                                        value="true"
+                                        uncheckedValue="false"/>
+                                    <networks
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        checked="{Boolean}true"
+                                        name="./networks"
+                                        text="Networks"
+                                        value="true"
+                                        uncheckedValue="false"/>
+                                    <images
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        checked="{Boolean}true"
+                                        name="./images"
+                                        text="Images"
+                                        value="true"
+                                        uncheckedValue="false"/>
+                                </items>
+                            </column>
+                        </items>
+                    </dialog>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>
